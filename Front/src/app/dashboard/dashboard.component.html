@@ -1,0 +1,12 @@
+<p>Tâches</p>
+<app-task-create></app-task-create>
+<mat-grid-list cols="3" rowHeight="2:1">
+    <div *ngFor="let task of tasks" class="main-div">
+        <mat-grid-tile>
+            <app-card [taskId]="task.id"></app-card>
+        </mat-grid-tile>
+    </div>
+</mat-grid-list>
+
+<p>Level</p>
+<mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
