@@ -1,0 +1,24 @@
+mat-tab-group{
+    margin-top: 0%;
+    width: 100%;
+    margin-top: -5%;
+}
+svg{
+    margin-left: 9%;
+    position: static;
+}
+
+
+mat-tab{
+    background-color: #2BD556;
+}
+mat-ink-bar{
+    background-color: #2BD556 !important;
+}
+mat-tab-ink.mat-ink-bar{
+    background-color: #2BD556 !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar{
+    background-color: #2BD556 !important;
+}
