@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardComponent } from './card/card.component';
@@ -10,13 +10,17 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { TaskCreateComponent } from './task-create/task-create.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     CardComponent,
-    TaskCreateComponent
+    TaskCreateComponent,
+    AccueilComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,8 @@ import { TaskCreateComponent } from './task-create/task-create.component';
     MatCardModule,
     MatDividerModule,
     MatProgressBarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
