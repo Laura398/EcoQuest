@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Urbanist";
+    src: local("Urbanist"), url(../../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf) format("truetype");
+}
+
+.home-bg {
+    position: absolute;
+    margin-left: 40%;
+    z-index: 1;
+}
+
+.home-img {
+    position:relative;
+    margin-left: 45%;
+    margin-top: 150px;
+    z-index: 2;
+}
+
+.home-content {
+    width: 45%;
+    position:absolute;
+    z-index: 3;
+    margin-top: 150px;
+    margin-left: 5%;
+}
+
+h1 {
+    font-family: "Urbanist";
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.home-text {
+    z-index: 3;
+    font-family: "Urbanist";
+    font-size: 1.5em;
+    margin-top: 50px;
+    overflow-wrap: normal;
+    width: 80%;
+}
+
+button {
+    color: white;
+    background-color: #2BD556;
+}

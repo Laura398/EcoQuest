@@ -6,6 +6,10 @@ import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
+import { ProtipsComponent } from './protips/protips.component';
+import { FooterComponent } from './footer/footer.component';
+import { ImageSpaceComponent } from './image-space/image-space.component';
+import { TextBoxComponent } from './text-box/text-box.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,16 +20,31 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { HttpClientModule } from '@angular/common/http';
+
+import { ValidationViewComponent } from './validation-view/validation-view.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { HomeComponent } from './home/home.component';
+import {MatButtonModule} from '@angular/material/button';
+import { ConnectionComponent } from './connection/connection.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProtipsComponent,
+    FooterComponent,
+    ImageSpaceComponent,
+    TextBoxComponent,
     DashboardComponent,
     CardComponent,
     TaskCreateComponent,
     AccueilComponent,
-    NavBarComponent
+    NavBarComponent,
+    ValidationViewComponent,
+    HomeComponent,
+    ConnectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,8 +59,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatGridListModule,
     MatTabsModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

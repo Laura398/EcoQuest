@@ -21,10 +21,12 @@
         <path class="cls-2" d="M1696.58,41c-1.09,2.45-4.09,5.18-10.36,5.18h-15.28a5,5,0,0,0-4.91,4.64V217.76h-13.91c-4.63,0-5.45-2.72-5.45-4.09V46.21h-27.55V32.85a6.06,6.06,0,0,1,6-6h78Z"/>
     </svg>
     <mat-tab-group mat-align-tabs="end">
-        <mat-tab label="Dashboard"><app-dashboard></app-dashboard></mat-tab>
-        <mat-tab label="Protips">Protips</mat-tab>
-        <mat-tab label="Ranking">Ranking</mat-tab>
-        <mat-tab label="Auth">Auth</mat-tab>
+        <mat-tab label="Accueil"><app-home></app-home></mat-tab>
         <mat-tab label="Qui sommes-nous ?">Qui sommes-nous ?</mat-tab>
+        <span *ngIf="connected">
+            <mat-tab label="Accueil"><app-dashboard></app-dashboard></mat-tab>
+        </span>
+        <mat-tab label="Protips"><app-protips></app-protips></mat-tab>
+        <span *ngIf="!connected"><mat-tab label="Connexion"><app-connection></app-connection></mat-tab></span>
     </mat-tab-group>
 </span>

@@ -20,7 +20,7 @@
     <mat-card-actions>
         <button [hidden]="confirmed" (click)="switchConfirm()">Confirmer</button>
         <button [hidden]="!confirmed" (click)="switchConfirm()">Modifier</button>
-        <button mat-button>Valider</button>
+        <button mat-button (click)="openDialog()">Valider</button>
         <button mat-button (click)="deleteTask()">Supprimer</button>
     </mat-card-actions>
     <mat-card-footer>

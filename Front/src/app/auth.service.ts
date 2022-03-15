@@ -8,5 +8,5 @@ import { WebRequestService } from './web-request.service';
 })
 export class AuthService {
 
-  constructor(private http:HttpClient, private webService:WebRequestService,private router:Router) { }
+  constructor() { }
 }
