@@ -1,4 +1,4 @@
-<div *ngIf="!client">
+<div *ngIf="commercant">
     <h1 mat-dialog-title>Eco-merçant</h1>
 
 <p>ID commerçant : 1</p>
@@ -12,7 +12,7 @@
 </mat-dialog-actions>
 </div>
 
-<div *ngIf="client">
+<div *ngIf="!commercant">
     <h1 mat-dialog-title>Eco-participant</h1>
 
 <p>ID du commerçant : <input type="text"></p>

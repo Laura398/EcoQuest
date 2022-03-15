@@ -12,8 +12,23 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.connected = true;
-    this.commercant = false;
+    const state = localStorage.getItem('state');
+    const role = localStorage.getItem('role');
+    if (state && state == "connected") {
+      this.connected = true
+    } else {
+      this.connected = false;
+    }
+    if (role && role == "commercant") {
+      this.commercant = true
+    } else {
+      this.commercant = false;
+    }
+  }
+
+  logout(): void {
+    localStorage.clear();
+    location.reload();
   }
 
 }

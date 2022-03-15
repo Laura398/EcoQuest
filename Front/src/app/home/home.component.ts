@@ -15,8 +15,18 @@ export class HomeComponent implements OnInit {
   constructor( public dialog: MatDialog ) { }
 
   ngOnInit(): void {
-    this.commercant = true;
-    this.connected = true;
+    const state = localStorage.getItem('state');
+    const role = localStorage.getItem('role');
+    if (state && state == "connected") {
+      this.connected = true
+    } else {
+      this.connected = false;
+    }
+    if (role && role == "commercant") {
+      this.commercant = true
+    } else {
+      this.commercant = false;
+    }
   }
 
   openDialog():void{
