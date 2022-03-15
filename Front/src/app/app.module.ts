@@ -12,6 +12,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ValidationViewComponent } from './validation-view/validation-view.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     CardComponent,
     TaskCreateComponent,
     AccueilComponent,
-    NavBarComponent
+    NavBarComponent,
+    ValidationViewComponent
   ],
   imports: [
     BrowserModule,
