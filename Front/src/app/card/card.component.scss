@@ -1,0 +1,53 @@
+.example-card {
+    width: 350px;
+    border: 1px solid #CED4DA;
+}
+
+button {
+    margin-right: 5px;
+    color: white;
+    background-color: #2BD556;
+    padding: 0 17%;
+}
+
+.modify-button {
+    margin: none;
+    margin-left: -8px;
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+    padding-top: -5px;
+    padding-bottom: -5px;
+    padding: 0 42%;
+}
+
+.confirm-button {
+    margin: none;
+    margin-bottom: 5px;
+    width: 95%;
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 10px 5px;
+    font-weight: bold;
+}
+
+.validate-button {
+    margin: none;
+    margin-left: -8px;
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+    padding-top: -5px;
+    padding-bottom: -5px;
+    padding: 0 42%;
+}
+
+.delete-button {
+    margin-right: 5px;
+    color: #2BD556;
+    background-color: white;
+    border: 1px solid #2BD556;
+    padding: 0 13%;
+}
