@@ -25,9 +25,8 @@
         <mat-tab label="Qui sommes-nous ?">Qui sommes-nous ?</mat-tab>
         <span *ngIf="connected">
             <mat-tab label="Accueil"><app-dashboard></app-dashboard></mat-tab>
-            <mat-tab label="Ranking">Ranking</mat-tab>
         </span>
-        <mat-tab label="Protips">Protips</mat-tab>
+        <mat-tab label="Protips"><app-protips></app-protips></mat-tab>
         <span *ngIf="!connected"><mat-tab label="Connexion"><app-connection></app-connection></mat-tab></span>
     </mat-tab-group>
 </span>
