@@ -11,12 +11,6 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
-  connected!: boolean;
-
-  constructor() { }
-
-  ngOnInit(): void {
     this.connected = false;
   }
 
