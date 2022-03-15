@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor() { }
 
   ngOnInit(): void {
+=======
+  connected!: boolean;
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+    this.connected = false;
+>>>>>>> Lucie
   }
 
 }

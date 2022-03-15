@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatTabsModule} from '@angular/material/tabs';
 import { AppComponent } from './app.component';
+import { ProtipsComponent } from './protips/protips.component';
+import { FooterComponent } from './footer/footer.component';
+import { ImageSpaceComponent } from './image-space/image-space.component';
+import { TextBoxComponent } from './text-box/text-box.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,15 +17,23 @@ import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProtipsComponent,
+    FooterComponent,
+    ImageSpaceComponent,
+    TextBoxComponent,
     DashboardComponent,
     CardComponent,
     TaskCreateComponent,
     AccueilComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +44,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatGridListModule,
     MatTabsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
