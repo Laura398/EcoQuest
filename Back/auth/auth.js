@@ -1,8 +1,12 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-
+const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
+const { Task } = require('../db/models/task.model');
+const { mongoose } = require('../db/mongoose');
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -80,10 +84,38 @@ app.post('/api/login', (req, res) => {
         next();
     });
 }
-
+//charger middleware
+app.use(bodyParser.json());
 
 app.get('/api/me', authenticateToken, (req, res) => {
     res.send(req.user);
 }) 
+app.get('/task', (req, res) => {
+    //retourne toutes les tâches de la db
+    Task.find({}).then((tasks) => {
+        res.send(tasks);
+    }).catch((e) => {
+        res.send(e);
+    });
+});
+app.post('/task', (req, res) => {
+    //Création d'un nouvelle liste de tâcheincluant id
+    let title = req.body.title;
+    let newTask = new Task({
+        title,
+        text,
+        userId
+    });
+    newTask.save().then((taskDoc) => {
+       //Toute la tache est retournée 
+        res.send(taskDoc);
+    })
 
+})
+app.patch('/task:id', (req, res)=>{
+    //update d'une tache présice
+})
+app.delete('/task:id', (req, res)=>{
+    //update d'une tache présice
+})
 app.listen(3000, () => { console.log('Server running on port 3000') });

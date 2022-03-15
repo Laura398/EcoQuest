@@ -16,7 +16,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
