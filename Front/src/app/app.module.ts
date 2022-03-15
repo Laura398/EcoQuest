@@ -12,6 +12,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MatDividerModule,
     MatProgressBarModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
