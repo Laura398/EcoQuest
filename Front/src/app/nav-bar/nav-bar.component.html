@@ -22,6 +22,7 @@
     </svg>
     <mat-tab-group mat-align-tabs="end">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <mat-tab label="Dashboard"><app-dashboard></app-dashboard></mat-tab>
         <mat-tab label="Protips">Protips</mat-tab>
         <mat-tab label="Ranking">Ranking</mat-tab>
@@ -37,5 +38,14 @@
         <mat-tab label="Protips">Protips</mat-tab>
         <span *ngIf="!connected"><mat-tab label="Connexion">Connexion</mat-tab></span>
 >>>>>>> Lucie
+=======
+        <mat-tab label="Qui sommes-nous ?"><app-home></app-home></mat-tab>
+        <span *ngIf="connected">
+            <mat-tab label="Accueil"><app-dashboard></app-dashboard></mat-tab>
+            <mat-tab label="Ranking">Ranking</mat-tab>
+        </span>
+        <mat-tab label="Protips">Protips</mat-tab>
+        <span *ngIf="!connected"><mat-tab label="Connexion">Connexion</mat-tab></span>
+>>>>>>> c4778ed242478f15d961f208f7a70c4542676c54
     </mat-tab-group>
 </span>
