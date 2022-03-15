@@ -24,7 +24,7 @@
         <mat-tab label="Accueil"><app-home></app-home></mat-tab>
         <mat-tab label="Qui sommes-nous ?">Qui sommes-nous ?</mat-tab>
         <span *ngIf="connected">
-            <mat-tab label="Accueil"><app-dashboard></app-dashboard></mat-tab>
+            <mat-tab label="Tâches"><app-dashboard></app-dashboard></mat-tab>
         </span>
         <mat-tab label="Protips"><app-protips></app-protips></mat-tab>
         <span *ngIf="!connected"><mat-tab label="Connexion"><app-connection></app-connection></mat-tab></span>
