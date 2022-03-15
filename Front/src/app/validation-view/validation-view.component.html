@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Eco-merçant</h1>
+
+<p>ID commerçant : 1</p>
+<p>Code promo: {{entier}}</p>
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>
+        Annuler
+    </button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial class="confirmer">Confirmer</button>
+</mat-dialog-actions>

@@ -16,10 +16,13 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ValidationViewComponent } from './validation-view/validation-view.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
 import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ConnectionComponent } from './connection/connection.component';
+
 
 
 @NgModule({
@@ -34,6 +37,7 @@ import { ConnectionComponent } from './connection/connection.component';
     TaskCreateComponent,
     AccueilComponent,
     NavBarComponent,
+    ValidationViewComponent,
     HomeComponent,
     ConnectionComponent,
   ],
@@ -47,7 +51,8 @@ import { ConnectionComponent } from './connection/connection.component';
     MatTabsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatDialogModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
