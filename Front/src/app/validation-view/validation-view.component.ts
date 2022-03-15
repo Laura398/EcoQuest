@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./validation-view.component.scss']
 })
 export class ValidationViewComponent implements OnInit {
+  client!: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.client = true;
   }
 
   entierAleatoire(min: number, max: number) {
@@ -17,5 +19,3 @@ export class ValidationViewComponent implements OnInit {
   }
   entier = this.entierAleatoire(10000, 99999);
 }
-
-

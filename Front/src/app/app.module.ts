@@ -22,7 +22,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ConnectionComponent } from './connection/connection.component';
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -53,6 +53,7 @@ import { ConnectionComponent } from './connection/connection.component';
     ReactiveFormsModule,
     MatDialogModule,
     MatButtonModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

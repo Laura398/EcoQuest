@@ -21,8 +21,8 @@ export class CardComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.task = 'Nouvelle tâche'
-    this.taskName = 'Titre'
+    this.task = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    this.taskName = 'Nom de la tâche'
     this.confirmed = true;
   }
 

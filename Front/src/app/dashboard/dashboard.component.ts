@@ -13,13 +13,13 @@ export class DashboardComponent implements OnInit {
   // tasks!: ITasks[];
   tasks!: ITasks[];
   taskSubscription!: Subscription;
-
+  
   constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
     this.taskSubscription = this.taskService.tasks$.subscribe((tasks: ITasks[]) => {
       this.tasks = tasks;
-    })
+    });
   }
 
   ngOnDestroy(): void {
