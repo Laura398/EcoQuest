@@ -31,9 +31,9 @@
         <mat-tab label="Protips"><app-protips></app-protips></mat-tab>
         <span *ngIf="!connected"><mat-tab label="Connexion"><app-connection></app-connection></mat-tab></span>
         <span *ngIf="connected"><mat-tab label="Déconnexion">
-            <div style="width: 400px; height: 300px; margin: auto; margin-top: 150px; border: 1px solid black; border-radius: 10px;" >
-                <h1 style="text-align: center; margin: 50px 20px;">Etes-vous sûr de vouloir vous déconnecter ?</h1>
-                <div style="text-align: center;">
+            <div class="div-valider">
+                <h1>Etes-vous sûr de vouloir vous déconnecter ?</h1>
+                <div class="div-button">
                     <button mat-flat-button (click)="logout()" class="validate-confirm">Valider</button>
                 </div>
             </div>
