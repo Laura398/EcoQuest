@@ -13,6 +13,10 @@ import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ValidationViewComponent } from './validation-view/validation-view.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,7 @@ import { ValidationViewComponent } from './validation-view/validation-view.compo
     TaskCreateComponent,
     AccueilComponent,
     NavBarComponent,
-    ValidationViewComponent
+    ValidationViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,10 @@ import { ValidationViewComponent } from './validation-view/validation-view.compo
     MatDividerModule,
     MatProgressBarModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

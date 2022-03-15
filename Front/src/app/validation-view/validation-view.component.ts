@@ -12,4 +12,10 @@ export class ValidationViewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  entierAleatoire(min: number, max: number) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  entier = this.entierAleatoire(10000, 99999);
 }
+
+
