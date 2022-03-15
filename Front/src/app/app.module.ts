@@ -15,6 +15,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ConnectionComponent } from './connection/connection.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {MatButtonModule} from '@angular/material/button';
     AccueilComponent,
     NavBarComponent,
     HomeComponent,
+    ConnectionComponent,
   ],
   imports: [
     BrowserModule,

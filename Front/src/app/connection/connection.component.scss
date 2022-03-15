@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Urbanist";
+    src: local("Urbanist"), url(../../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf) format("truetype");
+}
+
+.form-space {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.form {
+    margin: auto;
+    margin-top: 200px;
+    font-family: "Urbanist";
+}
+
+.form-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-button {
+    color: white;
+    background-color: #2BD556;
+}
+
+.column1 {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, white, #CED4DA, white) 1;
+    // border-right: 1px solid rgb(204,204,204) 50%;
+}
