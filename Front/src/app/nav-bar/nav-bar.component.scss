@@ -8,17 +8,34 @@ svg{
     position: static;
 }
 
-
-mat-tab{
+button {
+    text-align: center;
+    color: white;
     background-color: #2BD556;
-}
-mat-ink-bar{
-    background-color: #2BD556 !important;
-}
-mat-tab-ink.mat-ink-bar{
-    background-color: #2BD556 !important;
+    padding: 0 17%;
 }
 
-.mat-tab-group.mat-primary .mat-ink-bar{
-    background-color: #2BD556 !important;
+.div-valider {
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    margin-top: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.div-button {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+@media all and (max-width: 800px)
+{
+    .div-valider {
+        width: 90%;
+    }
 }

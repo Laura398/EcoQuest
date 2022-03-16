@@ -1,0 +1,34 @@
+<div class="connexion-page-container flex-row justify-content-around">
+  <div class="p-2 column1 flex-fill">
+    <form class="form">
+      <h1 class="form-title">Inscription</h1>
+      <div class="form-group form-space">
+        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Adresse mail" name="mail1" [(ngModel)]="mail1">
+        <p class="error" *ngIf="wrongMailFormat">Le format de l'email est incorrect.</p>
+      </div>
+      <div class="form-group form-space">
+        <input type="password" class="form-control" id="inputPassword1" placeholder="Mot de passe" name="password1" [(ngModel)]="password1">
+      </div>
+      <p class="error" *ngIf="missingInfo1">Merci de renseigner l'email et le mot de passe.</p>
+      <button type="submit" class="btn form-space form-button" (click)="register()">S'inscrire</button>
+          <div class="form-check form-space d-flex">
+              <label class="form-check-label" for="check">Commerçant ?</label>
+              <input type="checkbox" class="form-check-input" id="check" name="check" [(ngModel)]="check" (click)="isChecked()" style="margin-left: 20px;">
+          </div>
+    </form>
+  </div>
+  <div class="p-2 flex-fill">
+    <form class="form">
+      <h1 class="form-title">Connexion</h1>
+      <div class="form-group form-space">
+        <input type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" placeholder="Adresse mail" name="mail2" [(ngModel)]="mail2">
+      </div>
+      <div class="form-group form-space">
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Mot de passe" name="password2" [(ngModel)]="password2">
+      </div>
+      <p class="error" *ngIf="missingInfo2">Merci de renseigner l'email et le mot de passe.</p>
+      <p class="error" *ngIf="wrongData">L'email ou le mot de passe est incorrect.</p>
+      <button type="submit" class="btn form-space form-button" (click)="connection()">Se connecter</button>
+    </form>
+  </div>
+</div>

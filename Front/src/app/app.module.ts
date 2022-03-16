@@ -16,9 +16,13 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { TaskCreateComponent } from './task-create/task-create.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ValidationViewComponent } from './validation-view/validation-view.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
 import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ConnectionComponent } from './connection/connection.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -33,7 +37,9 @@ import {MatButtonModule} from '@angular/material/button';
     TaskCreateComponent,
     AccueilComponent,
     NavBarComponent,
+    ValidationViewComponent,
     HomeComponent,
+    ConnectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +51,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatTabsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatDialogModule,
+    MatButtonModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

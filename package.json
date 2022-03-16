@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ngx-device-detector": "^3.0.0"
+  }
+}

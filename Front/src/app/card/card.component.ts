@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TaskService } from '../task.service';
+import { ValidationViewComponent } from '../validation-view/validation-view.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-card',
@@ -13,11 +15,14 @@ export class CardComponent implements OnInit {
   task!: string;
   taskName!: string;
 
-  constructor(private taskService: TaskService) { }
+  constructor(
+    private taskService: TaskService,
+    public dialog: MatDialog
+    ) { }
 
   ngOnInit(): void {
-    this.task = 'Nouvelle tâche'
-    this.taskName = 'Titre'
+    this.task = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    this.taskName = 'Nom de la tâche'
     this.confirmed = true;
   }
 
@@ -29,4 +34,11 @@ export class CardComponent implements OnInit {
     this.taskService.deleteTask(this.taskId);
   }
 
+  openDialog():void{
+    this.dialog.open(ValidationViewComponent,{
+      width:"500px",
+      height:"220px"
+    }
+    );
+  }
 }

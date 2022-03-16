@@ -1,8 +1,8 @@
 <mat-card class="example-card">
-    <!-- <mat-card-subtitle>Tâche numéro {{taskId}}</mat-card-subtitle> -->
+    <mat-card-subtitle>Tâche n°{{taskId}}</mat-card-subtitle>
     <mat-card-title>
         <div [hidden]="confirmed">
-            <input type="text" [(ngModel)]="taskName">
+            <input type="text" [(ngModel)]="taskName" style="width: 98%">
         </div>
         <div [hidden]="!confirmed">
             <span *ngIf="taskName">{{taskName}}</span>
@@ -10,18 +10,19 @@
     </mat-card-title>
     <mat-card-content>
         <div [hidden]="confirmed">
-            <input type="text" [(ngModel)]="task">
+            <!-- <input type="text" [(ngModel)]="task"> -->
+            <textarea rows = "4%" cols = "34,9%" name = "description" [(ngModel)]="task"></textarea>
         </div>
         <div [hidden]="!confirmed">
             <span *ngIf="task">{{task}}</span>
         </div>
     </mat-card-content>
-    <mat-divider inset></mat-divider>
+    <button mat-flat-button [hidden]="!confirmed" (click)="switchConfirm()" class="modify-button">Modifier</button>
+
     <mat-card-actions>
-        <button [hidden]="confirmed" (click)="switchConfirm()">Confirmer</button>
-        <button [hidden]="!confirmed" (click)="switchConfirm()">Modifier</button>
-        <button mat-button>Valider</button>
-        <button mat-button (click)="deleteTask()">Supprimer</button>
+        <button [hidden]="confirmed" (click)="switchConfirm()" class="confirm-button">Confirmer</button>
+        <button mat-flat-button (click)="openDialog()" class="validate-confirm">Valider</button>
+        <button mat-flat-button (click)="deleteTask()" class="delete-button">Supprimer</button>
     </mat-card-actions>
     <mat-card-footer>
     </mat-card-footer>
