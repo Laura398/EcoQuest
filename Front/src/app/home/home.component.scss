@@ -3,6 +3,13 @@
     src: local("Urbanist"), url(../../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf) format("truetype");
 }
 
+.home-title{
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 10%;
+    width: 120%;
+}
+
 .home-bg {
     position: absolute;
     margin-left: 40%;
@@ -12,7 +19,7 @@
 .home-img {
     position:relative;
     margin-left: 45%;
-    margin-top: 150px;
+    margin-top: 15%;
     z-index: 2;
 }
 
@@ -20,7 +27,7 @@
     width: 45%;
     position:absolute;
     z-index: 3;
-    margin-top: 150px;
+    margin-top: 5%;
     margin-left: 5%;
 }
 
@@ -34,9 +41,9 @@ h1 {
     z-index: 3;
     font-family: "Urbanist";
     font-size: 1.5em;
-    margin-top: 50px;
+    margin-top: 48%;
     overflow-wrap: normal;
-    width: 80%;
+    width: 100%;
 }
 
 button {

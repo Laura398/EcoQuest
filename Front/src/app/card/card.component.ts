@@ -37,7 +37,7 @@ export class CardComponent implements OnInit {
   openDialog():void{
     this.dialog.open(ValidationViewComponent,{
       width:"500px",
-      height:"210px"
+      height:"220px"
     }
     );
   }
