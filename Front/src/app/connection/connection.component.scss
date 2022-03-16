@@ -9,6 +9,7 @@
 }
 
 .form {
+    width: 50%;
     margin: auto;
     margin-top: 200px;
     font-family: "Urbanist";
@@ -30,3 +31,23 @@
     border-image: linear-gradient(to bottom, white, #CED4DA, white) 1;
     // border-right: 1px solid rgb(204,204,204) 50%;
 }
+
+.connexion-page-container
+    {
+        display: flex;
+    }
+
+
+@media all and (max-width: 800px)
+{
+    .connexion-page-container
+    {
+        display: block;
+    }
+
+    .form {
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
