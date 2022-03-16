@@ -19,31 +19,31 @@ export class ProtipsComponent implements OnInit{
 
  ngOnInit(): void {
    this.imageOne = new ImageSpace(
-    'https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_960_720.jpg'
+    '../assets/images/protips/undraw_control_panel_re_y3ar.svg'
    );
 
    this.imageTwo = new ImageSpace(
-    'https://cdn.pixabay.com/photo/2020/09/26/07/05/sea-5603351_960_720.jpg'
+    '../assets/images/protips/undraw_flowers_vx06.svg'
    );
 
    this.imageThree = new ImageSpace(
-    'https://cdn.pixabay.com/photo/2022/03/04/15/14/river-7047522_960_720.jpg'
+    '../assets/images/protips/undraw_biking_kc-4-f.svg'
    );
 
    this.imageFour = new ImageSpace(
-    'https://cdn.pixabay.com/photo/2021/03/16/21/46/tea-6101059_960_720.jpg'
+    '../assets/images/protips/undraw_throw_away_re_x60k.svg'
    );
 
    this.imageFive = new ImageSpace(
-    'https://cdn.pixabay.com/photo/2015/07/28/22/12/autumn-865157_960_720.jpg'
+    '../assets/images/protips/undraw_navigator_a479.svg'
    );
 
    this.imageSix = new ImageSpace(
-    'https://cdn.pixabay.com/photo/2020/03/26/10/58/norway-4970080_960_720.jpg'
+    '../assets/images/protips/undraw_moving_re_pipp.svg'
    );
 
    this.imageSeven = new ImageSpace(
-    'https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_960_720.jpg'
+    '../assets/images/protips/undraw_nature_on_screen_xkli.svg'
    );
  }
 }
