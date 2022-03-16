@@ -5,7 +5,9 @@
         <button mat-flat-button>Créer un compte</button>
     </span>
     <span *ngIf="connected">
-        <button mat-flat-button (click)="openDialog()">Valider un participant</button>
+        <span *ngIf="commercant">
+            <button mat-flat-button (click)="openDialog()">Valider un participant</button>
+        </span>
     </span>
 </div>
 <div class="home-img">
