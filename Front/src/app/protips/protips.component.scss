@@ -7,11 +7,17 @@
   display: flex;
   width: 100%;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between ;
   align-items: center;
   gap: 5%;
 }
-
+#flex1{
+  flex:1;
+}
+#flex2{
+  flex:1;
+}
 .text-title{
   text-align: center;
 }

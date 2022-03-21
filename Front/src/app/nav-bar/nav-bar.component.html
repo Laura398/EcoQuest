@@ -2,7 +2,7 @@
     <img class="navbar" src="../assets/images/nav-bar.svg">
     <mat-tab-group mat-align-tabs="end">
         <mat-tab label="Accueil"><app-home></app-home></mat-tab>
-        <mat-tab label="Qui sommes-nous ?">Qui sommes-nous ?</mat-tab>
+        <mat-tab label="Qui sommes-nous ?"><app-whoarewe></app-whoarewe></mat-tab>
         <span *ngIf="connected">
             <span *ngIf="!commercant">
                 <mat-tab label="Tâches"><app-dashboard></app-dashboard></mat-tab>
