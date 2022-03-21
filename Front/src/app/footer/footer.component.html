@@ -1,1 +1,22 @@
-<p>footer works!</p>
+<footer>
+    <div class = logo-in-footer>
+        <app-image-space [imageSpace]="ecoQuestLogo"></app-image-space>
+    </div>
+    <div class = "links-to-sections">
+        <span>A propos</span>
+        <span>Service</span>
+        <span>Conditions générales</span>
+        <span>Contacts</span>
+    </div>
+    <div class = social-media>
+        <app-image-space [imageSpace]="facebookLogo"></app-image-space> 
+        <app-image-space [imageSpace]="instagramLogo"></app-image-space> 
+        <app-image-space [imageSpace]="linkedinLogo"></app-image-space> 
+        <app-image-space [imageSpace]="twitterLogo"></app-image-space> 
+    </div>
+    <span class = newsletter>
+        Abonnez-vous à la newsletter
+    </span>
+    <input class = "email" type="email" placeholder="Adresse e-mail">
+    <button class ="get-newsletter">S'abonner</button>
+</footer>

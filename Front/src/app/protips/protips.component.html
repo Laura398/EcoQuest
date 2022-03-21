@@ -1,47 +1,43 @@
 <div class=second-body>
 
-    <mat-grid-list cols="2">
-        <mat-grid-tile>
+    <div class="first-row">
+        <div>
             <app-image-space [imageSpace]="imageOne"></app-image-space>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <div class="upper-right-text">
-                <app-text-box></app-text-box>
-            </div>
-        </mat-grid-tile>
-    </mat-grid-list>
-
-    <mat-grid-list cols="3" gutterSize="120px" rowHeight="300" class = "second-row">
-        <div class = "second-row">
-        <mat-grid-tile>
-            <app-image-space [imageSpace]="imageTwo"></app-image-space>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <app-image-space [imageSpace]="imageThree"></app-image-space>
-        </mat-grid-tile>
-        <mat-grid-tile >
-            <app-image-space [imageSpace]="imageFour"></app-image-space>
-        </mat-grid-tile>
+        </div>
+        <div>
+            <h1 class=text-title>L'essentiel des protips</h1>
+            <app-text-box></app-text-box>
+        </div>
     </div>
-    </mat-grid-list>
 
-    <mat-grid-list cols="2" rowHeight="400">
-        <mat-grid-tile>
-            <div class = "bottom-left-text">
-                <app-text-box></app-text-box>
-            </div>
-        </mat-grid-tile>
-        <mat-grid-tile>
+    <div class="second-row">
+        <div class="image">
+            <app-image-space [imageSpace]="imageTwo"></app-image-space>
+        </div>
+        <div class="image">
+            <app-image-space [imageSpace]="imageThree"></app-image-space>
+        </div>
+        <div class="image">
+            <app-image-space [imageSpace]="imageFour"></app-image-space>
+        </div>
+    </div>
+
+    <div class="third-row">
+        <div>
+            <h1 class=text-title>Trajets en voiture</h1>
+            <app-text-box></app-text-box>
+        </div>
+        <div>
             <app-image-space [imageSpace]="imageFive"></app-image-space>
-        </mat-grid-tile>
-    </mat-grid-list>
+        </div>
+    </div>
 
-    <mat-grid-list cols="2" gutterSize="100">
-        <mat-grid-tile align-items = "flex-end">
-            <app-image-space [imageSpace]="imageSix" class = third-row-left-image></app-image-space>
-        </mat-grid-tile>
-        <mat-grid-tile align-items = "flex-end">
-            <app-image-space [imageSpace]="imageSeven" class = third-row-right-image></app-image-space>
-        </mat-grid-tile>
-    </mat-grid-list>
-</div>
+    <div class="fourth-row">
+        <div>
+            <app-image-space [imageSpace]="imageSix" class=third-row-left-image></app-image-space>
+        </div>
+        <div>
+            <app-image-space [imageSpace]="imageSeven" class=third-row-right-image></app-image-space>
+        </div>
+
+    </div>

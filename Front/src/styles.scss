@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+    font-family: "Urbanist";
+    src: local("Urbanist"), url(/Front/src/assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf) format("truetype");
+  }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
