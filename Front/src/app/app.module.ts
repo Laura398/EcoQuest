@@ -23,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ConnectionComponent } from './connection/connection.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { WhoareweComponent } from './whoarewe/whoarewe.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     ValidationViewComponent,
     HomeComponent,
     ConnectionComponent,
+    WhoareweComponent,
   ],
   imports: [
     BrowserModule,
