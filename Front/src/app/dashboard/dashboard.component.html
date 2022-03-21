@@ -1,20 +1,20 @@
-<div style="width: 80%; margin: auto; margin-top: 10px;">
+<div class="dashboard-container">
     <h2>Vos tâches</h2>
-<app-task-create></app-task-create>
-<mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)">
-    <div *ngFor="let task of tasks" class="main-div">
-        <mat-grid-tile>
-            <app-card [taskId]="task.id"></app-card>
-        </mat-grid-tile>
+    <app-task-create></app-task-create>
+    <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)">
+        <div *ngFor="let task of tasks" class="main-div">
+            <mat-grid-tile>
+                <app-card [taskId]="task.id"></app-card>
+            </mat-grid-tile>
+        </div>
+    </mat-grid-list>
+    <h2>Votre progression</h2>
+    <!-- <mat-progress-bar mode="determinate" value="40" color="accent"></mat-progress-bar> -->
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
-</mat-grid-list>
-<h2>Votre progression</h2>
-<!-- <mat-progress-bar mode="determinate" value="40" color="accent"></mat-progress-bar> -->
-<div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="d-flex justify-content-between">
-    <div>Niveau 1</div>
-    <div>Niveau 2</div>
-</div>
+    <div class="d-flex justify-content-between">
+        <div>Niveau 1</div>
+        <div>Niveau 2</div>
+    </div>
 </div>
