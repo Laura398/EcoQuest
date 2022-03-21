@@ -29,7 +29,11 @@
             </span>
         </span>
         <mat-tab label="Protips"><app-protips></app-protips></mat-tab>
-        <span *ngIf="!connected"><mat-tab label="Connexion"><app-connection></app-connection></mat-tab></span>
+        <span *ngIf="!connected">
+            <mat-tab label="Connexion">
+                <div style="margin-top: 200px;"><app-connection></app-connection></div>
+            </mat-tab>
+        </span>
         <span *ngIf="connected"><mat-tab label="Déconnexion">
             <div class="div-valider">
                 <h1>Etes-vous sûr de vouloir vous déconnecter ?</h1>

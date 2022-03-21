@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ValidationViewComponent } from '../validation-view/validation-view.component';
+import { ConnectionComponent } from '../connection/connection.component';
 import {MatDialog} from '@angular/material/dialog';
 
 @Component({
@@ -33,6 +34,14 @@ export class HomeComponent implements OnInit {
     this.dialog.open(ValidationViewComponent,{
       width:"500px",
       height:"220px"
+    }
+    );
+  }
+
+  goToSignUp(): void {
+    console.log("yes")
+    this.dialog.open(ConnectionComponent,{
+      width:"90%",
     }
     );
   }

@@ -2,7 +2,7 @@
     <h1 class="home-title">Aventure écologique</h1>
     <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <span *ngIf="!connected">
-        <button mat-flat-button>Créer un compte</button>
+        <button mat-flat-button (click)="goToSignUp()">Créer un compte</button>
     </span>
     <span *ngIf="connected">
         <span *ngIf="commercant">
