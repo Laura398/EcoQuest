@@ -4,13 +4,13 @@
 }
 
 .form-space {
-    margin: 10px auto;
+    margin: 5% auto;
     width: 100%;
 }
 
 .form {
     margin: auto;
-    margin-top: 200px;
+    margin-top: 25%;
     font-family: "Urbanist";
 }
 
@@ -27,6 +27,14 @@
 .column1 {
     border-width: 2px;
     border-style: solid;
-    border-image: linear-gradient(to bottom, white, #CED4DA, white) 1;
+    border-image: linear-gradient(to bottom, white, #CED4DA, white) 10;
     // border-right: 1px solid rgb(204,204,204) 50%;
+}
+
+mat-grid-list{
+    width: 99%;
+}
+
+body.mat-typographie{
+    width: 100%;
 }
