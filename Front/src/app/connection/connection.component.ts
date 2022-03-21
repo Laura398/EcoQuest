@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-connection',
@@ -13,6 +13,10 @@ export class ConnectionComponent implements OnInit {
   password2!: string;
   check!: boolean;
   role!: string;
+  missingInfo1!: boolean;
+  missingInfo2!: boolean;
+  wrongMailFormat!: boolean;
+  wrongData!: boolean;
 
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
 
@@ -25,6 +29,10 @@ export class ConnectionComponent implements OnInit {
     this.password2 = '';
     this.check = false;
     this.role = "client";
+    this.missingInfo1 = false;
+    this.missingInfo2 = false;
+    this.wrongMailFormat = false;
+    this.wrongData = false;
   }
 
   isChecked(): void {
@@ -50,9 +58,11 @@ export class ConnectionComponent implements OnInit {
         localStorage.setItem('role', this.role);
         this.ngOnInit();
       } else {
+        this.wrongMailFormat = true;
         console.log("email not okay")
       }
     } else {
+      this.missingInfo1 = true;
       console.log("missing data")
     }
   }
@@ -72,12 +82,15 @@ export class ConnectionComponent implements OnInit {
           localStorage.setItem('role', role);
           localStorage.setItem('state', "connected");
         } else {
+          this.wrongData = true;
           console.log("mail or password wrong")
         }
       } else {
+        this.wrongData = true;
         console.log("user not registered")
       }
     } else {
+      this.missingInfo2 = true;
       console.log("missing data")
     }
     location.reload();

@@ -16,7 +16,7 @@ button {
 }
 
 .div-valider {
-    width: 400px;
+    width: 40%;
     height: 300px;
     margin: auto;
     margin-top: 150px;
@@ -31,4 +31,11 @@ button {
 h1 {
     text-align: center;
     margin: 50px 20px;
+}
+
+@media all and (max-width: 800px)
+{
+    .div-valider {
+        width: 90%;
+    }
 }

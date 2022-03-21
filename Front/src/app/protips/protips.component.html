@@ -1,8 +1,43 @@
-<app-image-space [imageSpace]="imageOne"></app-image-space>
-<app-image-space [imageSpace]="imageTwo"></app-image-space>
-<app-image-space [imageSpace]="imageThree"></app-image-space>
-<app-image-space [imageSpace]="imageFour"></app-image-space>
-<app-image-space [imageSpace]="imageFive"></app-image-space>
-<app-image-space [imageSpace]="imageSix"></app-image-space>
-<app-image-space [imageSpace]="imageSeven"></app-image-space>
-<app-text-box></app-text-box>
+<div class=second-body>
+
+    <div class="first-row">
+        <div>
+            <app-image-space [imageSpace]="imageOne"></app-image-space>
+        </div>
+        <div>
+            <h1 class=text-title>L'essentiel des protips</h1>
+            <app-text-box></app-text-box>
+        </div>
+    </div>
+
+    <div class="second-row">
+        <div class="image">
+            <app-image-space [imageSpace]="imageTwo"></app-image-space>
+        </div>
+        <div class="image">
+            <app-image-space [imageSpace]="imageThree"></app-image-space>
+        </div>
+        <div class="image">
+            <app-image-space [imageSpace]="imageFour"></app-image-space>
+        </div>
+    </div>
+
+    <div class="third-row">
+        <div>
+            <h1 class=text-title>Trajets en voiture</h1>
+            <app-text-box></app-text-box>
+        </div>
+        <div>
+            <app-image-space [imageSpace]="imageFive"></app-image-space>
+        </div>
+    </div>
+
+    <div class="fourth-row">
+        <div>
+            <app-image-space [imageSpace]="imageSix" class=third-row-left-image></app-image-space>
+        </div>
+        <div>
+            <app-image-space [imageSpace]="imageSeven" class=third-row-right-image></app-image-space>
+        </div>
+
+    </div>

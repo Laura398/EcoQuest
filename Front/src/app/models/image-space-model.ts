@@ -1,4 +1,6 @@
 export class ImageSpace {
-    constructor(public imageUrl: string ) {
-    }
+  imageUrl!: string;
+  width?: string;
+  height?: string;
+  title?: string; 
   }

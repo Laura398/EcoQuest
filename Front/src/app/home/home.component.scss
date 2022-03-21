@@ -7,7 +7,7 @@
     position: absolute;
     margin-left: 0%;
     margin-top: 10%;
-    width: 120%;
+    line-height: 1;
 }
 
 .home-bg {
@@ -49,4 +49,21 @@ h1 {
 button {
     color: white;
     background-color: #2BD556;
+}
+
+
+@media all and (max-width: 900px)
+{
+    .home-text {
+        margin-top: 200px;
+    }
+
+    .home-title{
+        position: absolute;
+        margin-left: 0%;
+        margin-top: 10%;
+        line-height: 1;
+        font-size: 4em;
+    }
+
 }
