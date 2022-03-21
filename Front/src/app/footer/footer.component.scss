@@ -1,0 +1,50 @@
+footer {
+    font-family: "Urbanist";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f8f9;
+    text-align: center;
+    padding: 25px;
+}
+
+.links-to-sections {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+}
+
+.social-media {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.newsletter {
+    padding-bottom: 1%;
+}
+
+.email {
+    border-radius: 7px;
+    margin-bottom: 1%;
+    border-color: #2BD556;
+    font-size: 16px;
+    padding: 3px;
+    padding-left: 10px
+}
+
+button {
+    color: white;
+    background-color: #2BD556;
+    border-color: #2BD556;
+    border-radius: 7px;
+    border-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: 16px;
+}

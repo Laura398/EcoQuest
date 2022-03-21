@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Urbanist";
+  src: local("Urbanist"), url(../../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf) format("truetype");
+}
+
+.second-body {
+  font-family: "Urbanist";
+  padding: 65px;
+}
+
+.first-row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between ;
+  align-items: center;
+  gap: 5%;
+}
+
+.text-title{
+  text-align: center;
+}
+
+.second-row {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.third-row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly ;
+  align-items: center;
+  gap: 5%;
+}
+
+.fourth-row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: flex-end;
+  gap: 20%;
+  padding: 5%;
+}
