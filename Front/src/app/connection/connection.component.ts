@@ -48,11 +48,6 @@ export class ConnectionComponent implements OnInit {
   register(): void {
     if (this.mail1 != '' && this.password1 != '') {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.mail1)) {
-        // const registerInfos = {
-        //   mail: this.mail1,
-        //   password: this.password1,
-        //   commercant: this.check
-        // }
         localStorage.setItem('mail', this.mail1);
         localStorage.setItem('password', this.password1);
         localStorage.setItem('role', this.role);
@@ -69,11 +64,9 @@ export class ConnectionComponent implements OnInit {
 
   connection(): void {
     if (this.mail2 != '' && this.password2 != '') {
-      console.log(localStorage);
       const mail = localStorage.getItem('mail');
       const password = localStorage.getItem('password');
       const role = localStorage.getItem('role');
-      console.log(mail, password, role);
       if (mail && password && role) {
         if (mail == this.mail2 && password == this.password2) {
           localStorage.clear();
