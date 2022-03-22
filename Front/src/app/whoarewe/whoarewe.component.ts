@@ -8,9 +8,9 @@ import { ImageSpace } from '../models/image-space-model';
   styleUrls: ['./whoarewe.component.scss']
 })
 export class WhoareweComponent implements OnInit {
-
-  constructor() { }
-  imageEight!: ImageSpace;
+  title = 'EcoQuest';
+  
+  imageEight!:ImageSpace;
   imageNine!: ImageSpace;
   imageTen!: ImageSpace;
   imageEleven!: ImageSpace;
@@ -34,6 +34,7 @@ export class WhoareweComponent implements OnInit {
     this.imageEleven = {
     imageUrl: '../assets/images/whoarewe/undraw_environmental_study_re_q4q8.svg',
     width: "250"
- }
+ };
+  }
+
 }
-};

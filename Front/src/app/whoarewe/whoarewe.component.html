@@ -1,10 +1,10 @@
 <div class="whoarewebody">
 
 
-    <div>
-        <mat-grid-list id="firstdiv" cols="2" rowHeight="400px">
-            <mat-grid-tile>
-                <div>
+   
+        <div id="firstdiv">
+            
+                <div id="firstsubdiv1">
                     <h2><b>Qui sommes nous ?</b></h2>
                     <div id="QuiSommetext">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione pariatur vero earum ex.
@@ -17,23 +17,21 @@
                         quas repudiandae consequuntur porro vitae iure.
                     </div>
                 </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div>
+           
+            
+                <div id="firstsubdiv2">
                     <app-image-space [imageSpace]="imageEight"></app-image-space>
                 </div>
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
+            
+        </div>
 
     <div class="whoarewemid">
-        <mat-grid-list cols="2" rowHeight="300px">
-            <mat-grid-tile>
-                <div class="whoareweimgmid">
+        <div class="midcontainer">
+            
+        
+                <div class="whoareweimgmid right">
                     <app-image-space [imageSpace]="imageNine"></app-image-space>
                 </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
                 <div class="whoarewemidtext1">
                     <h4><b>Progression suivant les tâches accomplies</b></h4>
 
@@ -48,8 +46,8 @@
                         maiores corrupti nesciunt.
                     </p>
                 </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
+        </div>
+        <div class="midcontainer">
                 <div class="whoarewemidtext2">
                     <h4><b>Déposer vos article chez un marchand</b></h4>
 
@@ -65,18 +63,19 @@
                         accusamus ducimus eum beatae.
                     </p>
                 </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
+        
+           
                 <div class="whoareweimgmid">
                     <app-image-space [imageSpace]="imageTen"></app-image-space>
                 </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="whoareweimgmid">
+        </div>
+        <div class="midcontainer">
+            
+        
+                <div id="imgright" class="whoareweimgmid right">
                     <app-image-space [imageSpace]="imageEleven"></app-image-space>
                 </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
+           
                 <div class="whoarewemidtext1">
                     <h4><b>Découvrez régulièrement nos Protips</b></h4>
 
@@ -95,7 +94,6 @@
                         beatae.
                     </p>
                 </div>
-            </mat-grid-tile>
-        </mat-grid-list>
+        </div>
     </div>
 </div>

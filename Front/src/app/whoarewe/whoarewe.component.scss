@@ -2,18 +2,54 @@
 .whoarewebody{
     margin-left: 60px;
     margin-right: 60px;
-    font-family: "Urbanist";
+    margin-top: 5%;
+    font-family: "Urbanist" !important;
+
 }
 .whoarewemid{
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 5%;
+}
+#firstdiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#firstsubdiv1{
+    flex:2;
+    min-width:300px;
+    margin-bottom: 5%;
+}
+#firstsubdiv2{
+    flex:2;
+    max-width: 500px;
+    margin:auto;
+}
+.right img{
+    margin-left: 20% !important;
+}
+
+
+.midcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .whoareweimgmid{
     width: 250px;
+    flex: 2;
 }
 .whoarewemidtext1{
     padding-left: 20px;
+    padding-right: 20px;
+    flex: 2;
+    min-width: 300px;
 }
 .whoarewemidtext2{
     padding-right: 20px;
+    padding-left: 20px;
+    flex: 2;
+    min-width: 300px;
 }
