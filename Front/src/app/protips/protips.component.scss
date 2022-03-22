@@ -12,9 +12,14 @@
   align-items: center;
   gap: 5%;
 }
+
 #flex1{
-  flex:1;
+  flex:1;  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
+
 #flex2{
   flex:1;
 }
@@ -24,15 +29,29 @@
 
 .second-row {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding: 5%;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
+#flex3{
+  flex:1;
+  max-width: 100%;
+}
+
+#flex4 {
+  flex:1;
+
+}
+#flex5 {
+  flex:1;
+}
 
 .third-row {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly ;
@@ -40,8 +59,17 @@
   gap: 5%;
 }
 
+#flex6{
+  flex:1;
+}
+
+#flex7 {
+  flex:1;
+}
+
 .fourth-row {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
@@ -50,3 +78,16 @@
   gap: 20%;
   padding: 5%;
 }
+
+#flex8{
+  flex:1;
+}
+
+#flex9 {
+  flex:1;
+}
+
+img {
+  max-width: 100%;
+}
+

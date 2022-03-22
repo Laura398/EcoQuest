@@ -34,6 +34,6 @@ export class WhoareweComponent implements OnInit {
     this.imageEleven = {
     imageUrl: '../assets/images/whoarewe/undraw_environmental_study_re_q4q8.svg',
     width: "250"
- };
-  }
-
+ }
+}
+};
